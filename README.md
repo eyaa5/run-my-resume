@@ -1,3 +1,12 @@
+## Quick Start
+
+1. Download or clone this repo (GitHub Desktop → Clone).
+2. Open the folder in Explorer.
+3. Drag your `cv.pdf` onto `RunMyResume.bat`.
+4. The tool creates `cv.analysis.md` (human-readable) and `cv.analysis.json` (machine-readable) next to your PDF.
+
+> Note: outputs are in `.gitignore`, so your personal data won’t be pushed to Git.
+
 # run-my-resume
 
 A tiny Windows tool to analyze a PDF resume by **dragging & dropping** it onto a launcher.  
