@@ -1,0 +1,12 @@
+# keep personal files out
+*.pdf
+*.PDF
+
+# local outputs
+*.analysis.md
+*.analysis.json
+
+# editors / OS
+.vscode/
+.DS_Store
+Thumbs.db
