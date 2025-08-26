@@ -5,4 +5,4 @@ if "%~1"=="" (
   pause
   exit /b
 )
-powershell -NoProfile -ExecutionPolicy Bypass -File "%USERPROFILE%\Documents\RunResumeSidecar.ps1" -File "%~1"
+powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0RunResumeSidecar.ps1" "%~1"
