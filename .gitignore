@@ -1,12 +1,4 @@
-# keep personal files out
-*.pdf
-*.PDF
-
-# local outputs
-*.analysis.md
-*.analysis.json
-
-# editors / OS
-.vscode/
+__pycache__/
+*.pyc
+.venv/
 .DS_Store
-Thumbs.db
