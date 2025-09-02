@@ -1,0 +1,3 @@
+We are looking for a Software Engineer Intern.
+Skills: Python, Java, AWS, Lambda, API Gateway, S3, DynamoDB, SQL, Git, Testing.
+Experience with React or Node is a plus.
