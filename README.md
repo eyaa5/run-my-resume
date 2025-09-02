@@ -1,35 +1,29 @@
+# Run My Resume 🚀
+
+AI-powered CV analyzer & enhancer (FastAPI + Python).  
+Upload a PDF CV and a Job Description → get:
+
+- ✅ Skill match score
+- ✅ Found & missing skills
+- ✅ Improved CV bullet points
+- ✅ Short summary + cover letter draft
+- ✅ Downloadable markdown pack
+
+---
+
 ## Quick Start
+```bash
+# Clone the repo
+git clone https://github.com/eyaa5/run-my-resume.git
+cd run-my-resume
 
-1. Download or clone this repo (GitHub Desktop → Clone).
-2. Open the folder in Explorer.
-3. Drag your `cv.pdf` onto `RunMyResume.bat`.
-4. The tool creates `cv.analysis.md` (human-readable) and `cv.analysis.json` (machine-readable) next to your PDF.
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate   # on Linux/Mac
+venv\Scripts\activate      # on Windows
 
-> Note: outputs are in `.gitignore`, so your personal data won’t be pushed to Git.
+# Install dependencies
+pip install -r requirements.txt
 
-# run-my-resume
-
-A tiny Windows tool to analyze a PDF resume by **dragging & dropping** it onto a launcher.  
-Converts the PDF to text (via `pdftotext`), extracts email/phone/skills, and writes a friendly summary to Markdown and JSON.
-
-## ✨ Features
-- Drag-and-drop `.pdf` onto `RunMyResume.bat`
-- Extracts **email**, **phone**, and top **skills**
-- Saves:
-  - `cv.analysis.md` – human-readable summary
-  - `cv.analysis.json` – machine-readable
-- Runs locally (no internet needed)
-
-## ⚙️ Requirements
-- Windows 10/11
-- PowerShell 5+ (built-in)
-- Poppler `pdftotext` (auto-installs on first run via `winget`)
-
-## 🚀 Quick Start
-1. **Clone** this repo (GitHub Desktop or `git clone`).
-2. Put your resume PDF in the folder (e.g., `cv.pdf`).
-3. **Option A – Drag & Drop:** drag your PDF onto `RunMyResume.bat`.
-4. **Option B – PowerShell:**
-   ```powershell
-   # from the repo folder
-   powershell -NoProfile -ExecutionPolicy Bypass -File .\RunResume.ps1 -File ".\cv.pdf"
+# Run API
+uvicorn api.main:app --reload
