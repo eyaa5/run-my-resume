@@ -1,4 +1,4 @@
-# Run My Resume 🚀
+# Run My Resume 
 
 AI-powered CV analyzer & enhancer (FastAPI + Python).  
 Upload a PDF CV and a Job Description → get:
