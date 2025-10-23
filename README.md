@@ -3,11 +3,11 @@
 AI-powered CV analyzer & enhancer (FastAPI + Python).  
 Upload a PDF CV and a Job Description → get:
 
-- ✅ Skill match score
-- ✅ Found & missing skills
-- ✅ Improved CV bullet points
-- ✅ Short summary + cover letter draft
-- ✅ Downloadable markdown pack
+-  Skill match score
+-  Found & missing skills
+-  Improved CV bullet points
+-  Short summary + cover letter draft
+-  Downloadable markdown pack
 
 ---
 
